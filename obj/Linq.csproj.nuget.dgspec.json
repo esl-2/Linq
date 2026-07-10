@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\projects\\c#\\Linq\\Linq.csproj": {}
+    "D:\\projects\\c#\\Linq\\Linq.csproj": {}
   },
   "projects": {
-    "d:\\projects\\c#\\Linq\\Linq.csproj": {
+    "D:\\projects\\c#\\Linq\\Linq.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\projects\\c#\\Linq\\Linq.csproj",
+        "projectUniqueName": "D:\\projects\\c#\\Linq\\Linq.csproj",
         "projectName": "Linq",
-        "projectPath": "d:\\projects\\c#\\Linq\\Linq.csproj",
+        "projectPath": "D:\\projects\\c#\\Linq\\Linq.csproj",
         "packagesPath": "C:\\Users\\SMART\\.nuget\\packages\\",
-        "outputPath": "d:\\projects\\c#\\Linq\\obj\\",
+        "outputPath": "D:\\projects\\c#\\Linq\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SMART\\AppData\\Roaming\\NuGet\\NuGet.Config"
