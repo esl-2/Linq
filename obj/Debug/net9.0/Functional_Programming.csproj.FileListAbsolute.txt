@@ -1,0 +1,14 @@
+D:\projects\c#\Linq\Functional_Programming\obj\Debug\net9.0\Functional_Programming.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\c#\Linq\Functional_Programming\obj\Debug\net9.0\Functional_Programming.AssemblyInfoInputs.cache
+D:\projects\c#\Linq\Functional_Programming\obj\Debug\net9.0\Functional_Programming.AssemblyInfo.cs
+D:\projects\c#\Linq\Functional_Programming\obj\Debug\net9.0\Functional_Programming.csproj.CoreCompileInputs.cache
+D:\projects\c#\Linq\Functional_Programming\bin\Debug\net9.0\Functional_Programming.exe
+D:\projects\c#\Linq\Functional_Programming\bin\Debug\net9.0\Functional_Programming.deps.json
+D:\projects\c#\Linq\Functional_Programming\bin\Debug\net9.0\Functional_Programming.runtimeconfig.json
+D:\projects\c#\Linq\Functional_Programming\bin\Debug\net9.0\Functional_Programming.dll
+D:\projects\c#\Linq\Functional_Programming\bin\Debug\net9.0\Functional_Programming.pdb
+D:\projects\c#\Linq\Functional_Programming\obj\Debug\net9.0\Functional_Programming.dll
+D:\projects\c#\Linq\Functional_Programming\obj\Debug\net9.0\refint\Functional_Programming.dll
+D:\projects\c#\Linq\Functional_Programming\obj\Debug\net9.0\Functional_Programming.pdb
+D:\projects\c#\Linq\Functional_Programming\obj\Debug\net9.0\Functional_Programming.genruntimeconfig.cache
+D:\projects\c#\Linq\Functional_Programming\obj\Debug\net9.0\ref\Functional_Programming.dll
