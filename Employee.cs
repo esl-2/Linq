@@ -26,6 +26,14 @@ namespace Linq
                     $"[ {string.Join(", ", Skills)} ]";
 
         }
+        public override bool Equals(object? obj)
+        {
+            Employee otheremp=obj as Employee;
+            if (otheremp ==null )
+                return false;
+            return this.Name==otheremp.Name && this.EmployeeNo ==otheremp.EmployeeNo;
+        }
+
     }
 
     

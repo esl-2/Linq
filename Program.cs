@@ -6,10 +6,16 @@ class Program
     {
         var myemployee = Repository.LoadEmployees();
 
-        
 
 
 
+
+        #region any&all&contains 
+        /*var result=myemployee.Any(e => e.Salary ==3_459);
+        var result1=myemployee.All(e => e.Salary > 2_000);
+        var empToFind = new Employee { EmployeeNo = "2016-HR-3770", Name = "Eslam" }; 
+        bool isfound=myemployee.Contains(empToFind);*/
+        #endregion
         #region Pagination
         /*var result=myemployee.Where(e=>e.Salary>=3000).Paginate(1,3).
         Select(e=> new {empName=e.Name ,empSalary=e.Salary});*/
@@ -31,7 +37,17 @@ class Program
         #endregion
 
     }
+    #region groupby
+    /*public void rungroupby()
+    {
+        var emps=Repository.LoadEmployees();
+        var result =emps.GroupBy(e => e.Name.Length);
+        foreach (var item in result)
+            foreach (var i in item)
+                Console.Write($"the employee salary {i.Name}");
 
-    
+
+    }*/
+    #endregion
 }
 
