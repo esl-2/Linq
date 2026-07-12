@@ -6,8 +6,10 @@ class Program
     {
         var employee = Repository.LoadEmployees();
         var Department=Repository.LoadDepartment();
-
-
+        
+        #region Concatnation
+        //var result=employee.Select(q =>q.FullName).Concat(Department.Select(q =>q.Name));
+        #endregion
         #region ElementAt&Last&First&Single
         /*var single=employee.Single(e => e.Id == 4);
         var first=employee.First(e => e.Id > 1005);
