@@ -7,7 +7,19 @@ class Program
         var employee = Repository.LoadEmployees();
         var Department=Repository.LoadDepartment();
 
-        
+
+        #region ElementAt&Last&First&Single
+        /*var single=employee.Single(e => e.Id == 4);
+        var first=employee.First(e => e.Id > 1005);
+        var last=employee.Last(e => e.Id > 1005);
+        var elementat=employee.ElementAt(1005);*/
+        #endregion
+        #region Repeat&Empty&Range
+        /*var pages=Enumerable.Range(1,5);
+        var comments=Enumerable.Empty<string>();
+        comments.DefaultIfEmpty<string>("No comments yet");
+        var repat=Enumerable.Repeat("***",3);*/
+        #endregion
         #region groubjoin
         /*var result=Department.GroupJoin(employee,
             dot => dot.Id,
@@ -48,19 +60,17 @@ class Program
         var orderbynameM=myemployee.OrderBy(e=>e.Name.Length);
         */
         #endregion
-
-    }
-    #region groupby
-    /*public void rungroupby()
-    {
+        #region groupby
+        /*
         var emps=Repository.LoadEmployees();
         var result =emps.GroupBy(e => e.Name.Length);
         foreach (var item in result)
             foreach (var i in item)
                 Console.Write($"the employee salary {i.Name}");
-
-
-    }*/
-    #endregion
+        */
+        #endregion
+    }
+    
+    
 }
 
