@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic; 
 
-namespace LINQTut09.Shared
+namespace Linq
 {
     public static class Repository
     {

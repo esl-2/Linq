@@ -1,7 +1,7 @@
 ﻿
 using System;
 
-namespace LINQTut09.Shared
+namespace Linq
 {
     public class Employee
     {

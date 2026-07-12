@@ -1,17 +1,28 @@
-﻿using LINQTut09.Shared;
-
-namespace Linq;
+﻿namespace Linq;
 
 class Program
 {
     static void Main(string[] args)
     {
-        var myemployee = Repository.LoadEmployees();
+        var employee = Repository.LoadEmployees();
+        var Department=Repository.LoadDepartment();
 
-
-
-
-
+        
+        #region groubjoin
+        /*var result=Department.GroupJoin(employee,
+            dot => dot.Id,
+            emp =>emp.DepartmentId,
+            (dot, emp )=>new
+            {
+                Departmentname= dot.Name,
+                employeecont= emp.Count()
+            }
+        );
+        foreach (var item in result)
+        {
+            System.Console.WriteLine($"#################{item.Departmentname}################\n {item.employeecont}");
+        }*/
+        #endregion
         #region any&all&contains 
         /*var result=myemployee.Any(e => e.Salary ==3_459);
         var result1=myemployee.All(e => e.Salary > 2_000);
