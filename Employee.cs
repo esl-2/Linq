@@ -1,40 +1,31 @@
-﻿using System;
+﻿
+using System;
 
-namespace Linq
+namespace LINQTut09.Shared
 {
     public class Employee
-    { 
-        public string  EmployeeNo { get; set; }
+    {
+        public Employee() { }
+        public int Id { get; set; }
 
-        public string Name { get; set; } 
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
+
+        public DateTime HireDate { get; set; }
+
+        public string Gender { get; set; }
+
+        public int DepartmentId { get; set; }
          
-        public string Email { get; set; }
+        public bool HasHealthInsurance { get; set; }
+
+        public bool HasPensionPlan { get; set; }
+
         public decimal Salary { get; set; }
 
-        public List<string> Skills { get; set; } = new List<string>();
+        public string FullName => $"{FirstName} {LastName}";
 
          
-        public override string ToString()
-        {
-
-            return
-                    $"" +
-                    $"{EmployeeNo.PadRight(13, ' ')}\t" +
-                    $"{Name.PadRight(20, ' ')}\t" +
-                    $"{Email.PadRight(32, ' ')}\t"  +
-                    $"{String.Format("{0:C0}", Salary)}  "  +
-                    $"[ {string.Join(", ", Skills)} ]";
-
-        }
-        public override bool Equals(object? obj)
-        {
-            Employee otheremp=obj as Employee;
-            if (otheremp ==null )
-                return false;
-            return this.Name==otheremp.Name && this.EmployeeNo ==otheremp.EmployeeNo;
-        }
-
     }
-
-    
 }

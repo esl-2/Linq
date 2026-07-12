@@ -1,4 +1,6 @@
-﻿namespace Linq;
+﻿using LINQTut09.Shared;
+
+namespace Linq;
 
 class Program
 {
