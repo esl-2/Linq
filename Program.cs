@@ -1,12 +1,22 @@
-﻿namespace Linq;
+﻿using System.Linq.Expressions;
+
+namespace Linq;
 
 class Program
 {
     static void Main(string[] args)
     {
         var employee = Repository.LoadEmployees();
+        var employee1 = Repository1.LoadEmployees();
         var Department=Repository.LoadDepartment();
         
+        #region where
+        /*var itemployees = myemployee.Where(e=>e.Skills.Count==2 &&e.Salary==3000);
+        foreach (var item in itemployees)
+        {
+            Console.WriteLine(item);
+        }*/
+        #endregion
         #region Concatnation
         //var result=employee.Select(q =>q.FullName).Concat(Department.Select(q =>q.Name));
         #endregion
@@ -47,13 +57,6 @@ class Program
         /*var result=myemployee.Where(e=>e.Salary>=3000).Paginate(1,3).
         Select(e=> new {empName=e.Name ,empSalary=e.Salary});*/
         #endregion
-        #region where
-        /*var itemployees = myemployee.Where(e=>e.Skills.Count==2 &&e.Salary==3000);
-        foreach (var item in itemployees)
-        {
-            Console.WriteLine(item);
-        }*/
-        #endregion
         #region chunk
         /*var padgeemps=myemployee.Chunk(10).ElementAtOrDefault(7);*/
         #endregion
@@ -70,6 +73,38 @@ class Program
             foreach (var i in item)
                 Console.Write($"the employee salary {i.Name}");
         */
+        #endregion
+        #region sum,min,max,avg,aggrigate 
+        //var sum=employee.Sum(e =>e.Salary);
+        //System.Console.WriteLine($"total salary is : {sum}");
+        //var AVG=employee.Average(e =>e.Salary);
+        //System.Console.WriteLine($"Average salary is {AVG}");
+        //var max=employee.Max(e =>e.Salary);
+        //System.Console.WriteLine($"MAX salary is : {max}");
+        //var maxby=employee.MaxBy(e =>e.Salary);
+        //System.Console.WriteLine($"who has MAX salary :{maxby}");
+        //var MIN=employee.Min(e =>e.Salary);
+        //System.Console.WriteLine($"Minimum salary is :{MIN}");
+        //var Minby=employee.MinBy(e =>e.Salary);
+        //System.Console.WriteLine($"who has minimum salary : {Minby}");
+        //var maxsalary=employee.Aggregate((e,a) => e.Salary < a.Salary ? a : e);
+        //System.Console.WriteLine($"who has MAX salary :{maxsalary}");
+        #endregion
+        #region Distinct, Except, Intersect, Union
+            /*var total =employee.UnionBy(employee1,x=> x.DepartmentId);
+            var union =employee.IntersectBy(employee1.Select(x => x.DepartmentId),x =>x.DepartmentId); 
+            var except =employee.ExceptBy(employee1.Select(x => x.DepartmentId),x =>x.DepartmentId); 
+            */
+        #endregion
+        #region expression tree
+            /***
+            convert delegate to Data Structure 
+            using with EF
+            ***/         
+            Expression<Func<int,int,bool>> func=(num1,num2) => num1 +num2 <= 20/num1;
+            var funcD=func.Compile();
+            System.Console.WriteLine(funcD(20,1));
+
         #endregion
     }
     
